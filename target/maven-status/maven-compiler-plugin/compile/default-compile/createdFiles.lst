@@ -1,0 +1,4 @@
+com\ennov\entity\ProductResponseEntity.class
+com\ennov\controller\ProductController.class
+com\ennov\entity\Product.class
+com\ennov\ProductAggreratorApplication.class
