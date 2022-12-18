@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "dba0c2ac-1484-4b07-a253-455230b2dbc6",
+		"name": "ennov-product-aggregator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "filter by product_line",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/filterByProdLine/Venus Cream",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"filterByProdLine",
+						"Venus Cream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read CSV",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/readCSV",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"readCSV"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "req param - filterByProdLine",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/filterByProdLine/req?product_line=Kappa Dip",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"filterByProdLine",
+						"req"
+					],
+					"query": [
+						{
+							"key": "product_line",
+							"value": "Kappa Dip"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter by product_brand",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/filterByProdBrand/Mars Premix 100mg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"filterByProdBrand",
+						"Mars Premix 100mg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter by product_price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/filterByProdPrice/8.5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"filterByProdPrice",
+						"8.5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/filterProducts?product_line=Iota Premix&product_brand=Iota Premix 10mg ABC&product_price=8.2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/filterProducts?product_line=Beta Capsules",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"filterProducts"
+					],
+					"query": [
+						{
+							"key": "product_line",
+							"value": "Uranus Bolus",
+							"disabled": true
+						},
+						{
+							"key": "product_brand",
+							"value": "Uranus Bolus Super",
+							"disabled": true
+						},
+						{
+							"key": "product_price",
+							"value": "0.3",
+							"disabled": true
+						},
+						{
+							"key": "product_line",
+							"value": "Beta Capsules"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/filterProducts?product_line=Venus Cream&product_brand=Beta Capsules Ultra&product_price=2.1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/filterProducts?product_line=Venus Cream&product_brand=Beta Capsules Ultra&product_price=2.1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"filterProducts"
+					],
+					"query": [
+						{
+							"key": "product_line",
+							"value": "Venus Cream"
+						},
+						{
+							"key": "product_brand",
+							"value": "Beta Capsules Ultra"
+						},
+						{
+							"key": "product_price",
+							"value": "2.1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sumOfFilteredProdPrice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sumOfFilteredProdPrice/Iota Premix",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sumOfFilteredProdPrice",
+						"Iota Premix"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDif",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getDif",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getDif"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
